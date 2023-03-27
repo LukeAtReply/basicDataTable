@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title = "Guests">
+    <lightning-datatable
+                key-field="id"
+                data={data}
+                row-number-offset={rowOffset}
+                hide-checkbox-column
+                columns={columns}
+                sorted-by={sortBy}
+                sorted-direction={sortDirection}
+                onsort={doSorting}>
+        </lightning-datatable>
+    </lightning-card>
+</template>
